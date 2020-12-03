@@ -1,0 +1,1149 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+ /* [class*="container"] {
+  border: 1px dashed red;
+}
+[class*="row"] {
+  border: 1px solid blue;
+}
+[class*="col"] {
+  border: 1px ridge chartreuse;
+} */
+.info {
+  text-align: center;
+  font: 300;
+  color: aliceblue;
+}
+/* [class*="col"] {
+  min-height: 33vh;
+  text-align: center;
+} */
+.infodiv {
+  padding: 0 6px;
+  float: none;
+  /* width: 25%; */
+  color: cornsilk;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+body:before {
+  width: 100%;
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: #051421 url("../i/me2.png") top center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+h1 {
+  font-family: Arial;
+  font-size: 5.0em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 15px;
+  color: #ffffff;
+  font-family: 'AvenirNextLTPro-Regular', Helvetica, Arial, sans-serif; }
+
+h2 {
+  font-size: 4.0em;
+  color: #6bccef;
+  font-family: 'AvenirNextLTPro-UltLt', Helvetica, Arial, sans-serif; }
+
+h3 {
+  font-size: 1.0em;
+  color: #ffffff;
+  font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding-bottom: 8px; }
+
+h4 {
+  clear: both;
+  font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  margin-bottom: 36px;
+  padding-top: 40px;
+  text-align: center;
+  color: #ffffff; }
+
+p {
+  font-family: 'AvenirNextLTPro-Regular', Helvetica, Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  margin-bottom: 20px; }
+
+.more {
+  margin: 40px 0 0 0;
+  padding-bottom: 80px; }
+  .more .button {
+    text-align: center; }
+    .more .button a, .more .button a:link, .more .button a:active {
+      font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+      color: #051421;
+      font-size: 0.9em;
+      line-height: 1.0em;
+      margin-bottom: 0;
+      padding: 20px 30px 18px 30px;
+      background-color: #81d4f1;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em; }
+    .more .button a:hover {
+      text-decoration: none;
+      background-color: #008fc2; }
+
+section.main {
+  width: 80%;
+  padding: 0 10%;
+  background: transparent url("../i/grey-bg.png") top left repeat;
+  /*  SECTIONS  */
+  /*  COLUMN SETUP  */ }
+  section.main header {
+    text-align: center;
+    padding: 25% 0 60px 0; }
+  section.main .section {
+    clear: both;
+    padding: 0px;
+    margin: 0px; }
+  section.main .col, section.main .col-even {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%; }
+    section.main .col a, section.main .col-even a {
+      display: block;
+      text-decoration: none; }
+      section.main .col a img, section.main .col-even a img {
+        max-width: 100%; }
+    section.main .col .caption, section.main .col-even .caption {
+      padding: 20px 10px 16px 10px;
+      margin-top: -81px;
+      text-align: center;
+      color: #ffffff; }
+      section.main .col .caption p, section.main .col-even .caption p {
+        font-size: 0.95em;
+        line-height: 1.0em;
+        margin-bottom: 0; }
+    section.main .col .tn-fc a, section.main .col .tn-fc a:link, section.main .col .tn-fc a:active, section.main .col-even .tn-fc a, section.main .col-even .tn-fc a:link, section.main .col-even .tn-fc a:active {
+      background: transparent url("../i/tn-fc1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-fc a .caption, section.main .col .tn-fc a:link .caption, section.main .col .tn-fc a:active .caption, section.main .col-even .tn-fc a .caption, section.main .col-even .tn-fc a:link .caption, section.main .col-even .tn-fc a:active .caption {
+        background: transparent url("../i/fc-blue80.png") top left repeat; }
+    section.main .col .tn-fc a:hover, section.main .col-even .tn-fc a:hover {
+      background: transparent url("../i/tn-fc2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-fc a:hover .caption, section.main .col-even .tn-fc a:hover .caption {
+        background: transparent url("../i/fc-blue80.png") top left repeat; }
+    section.main .col .tn-sf a, section.main .col .tn-sf a:link, section.main .col .tn-sf a:active, section.main .col-even .tn-sf a, section.main .col-even .tn-sf a:link, section.main .col-even .tn-sf a:active {
+      background: transparent url("../i/tn-sf1.2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-sf a .caption, section.main .col .tn-sf a:link .caption, section.main .col .tn-sf a:active .caption, section.main .col-even .tn-sf a .caption, section.main .col-even .tn-sf a:link .caption, section.main .col-even .tn-sf a:active .caption {
+        background: transparent url("../i/sf-green80.png") top left repeat; }
+    section.main .col .tn-sf a:hover, section.main .col-even .tn-sf a:hover {
+      background: transparent url("../i/tn-sf2.2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-sf a:hover .caption, section.main .col-even .tn-sf a:hover .caption {
+        background: transparent url("../i/sf-green80.png") top left repeat; }
+    section.main .col .tn-bb a, section.main .col .tn-bb a:link, section.main .col .tn-bb a:active, section.main .col-even .tn-bb a, section.main .col-even .tn-bb a:link, section.main .col-even .tn-bb a:active {
+      background: transparent url("../i/tn-bb1.1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-bb a .caption, section.main .col .tn-bb a:link .caption, section.main .col .tn-bb a:active .caption, section.main .col-even .tn-bb a .caption, section.main .col-even .tn-bb a:link .caption, section.main .col-even .tn-bb a:active .caption {
+        background: transparent url("../i/bb-green80.png") top left repeat; }
+    section.main .col .tn-bb a:hover, section.main .col-even .tn-bb a:hover {
+      background: transparent url("../i/tn-bb2.1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-bb a:hover .caption, section.main .col-even .tn-bb a:hover .caption {
+        background: transparent url("../i/bb-green80.png") top left repeat; }
+    section.main .col .tn-iv a, section.main .col .tn-iv a:link, section.main .col .tn-iv a:active, section.main .col-even .tn-iv a, section.main .col-even .tn-iv a:link, section.main .col-even .tn-iv a:active {
+      background: transparent url("../i/tn-iv1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-iv a .caption, section.main .col .tn-iv a:link .caption, section.main .col .tn-iv a:active .caption, section.main .col-even .tn-iv a .caption, section.main .col-even .tn-iv a:link .caption, section.main .col-even .tn-iv a:active .caption {
+        background: transparent url("../i/iv-red80.png") top left repeat; }
+    section.main .col .tn-iv a:hover, section.main .col-even .tn-iv a:hover {
+      background: transparent url("../i/tn-iv2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-iv a:hover .caption, section.main .col-even .tn-iv a:hover .caption {
+        background: transparent url("../i/iv-red80.png") top left repeat; }
+    section.main .col .tn-oc a, section.main .col .tn-oc a:link, section.main .col .tn-oc a:active, section.main .col-even .tn-oc a, section.main .col-even .tn-oc a:link, section.main .col-even .tn-oc a:active {
+      background: transparent url("../i/tn-oc1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-oc a .caption, section.main .col .tn-oc a:link .caption, section.main .col .tn-oc a:active .caption, section.main .col-even .tn-oc a .caption, section.main .col-even .tn-oc a:link .caption, section.main .col-even .tn-oc a:active .caption {
+        background: transparent url("../i/oc-blue80.png") top left repeat; }
+    section.main .col .tn-oc a:hover, section.main .col-even .tn-oc a:hover {
+      background: transparent url("../i/tn-oc2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-oc a:hover .caption, section.main .col-even .tn-oc a:hover .caption {
+        background: transparent url("../i/oc-blue80.png") top left repeat; }
+    section.main .col .tn-cw a, section.main .col .tn-cw a:link, section.main .col .tn-cw a:active, section.main .col-even .tn-cw a, section.main .col-even .tn-cw a:link, section.main .col-even .tn-cw a:active {
+      background: transparent url("../i/tn-cw1.1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-cw a .caption, section.main .col .tn-cw a:link .caption, section.main .col .tn-cw a:active .caption, section.main .col-even .tn-cw a .caption, section.main .col-even .tn-cw a:link .caption, section.main .col-even .tn-cw a:active .caption {
+        background: transparent url("../i/cw-orange80.png") top left repeat; }
+    section.main .col .tn-cw a:hover, section.main .col-even .tn-cw a:hover {
+      background: transparent url("../i/tn-cw2.1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-cw a:hover .caption, section.main .col-even .tn-cw a:hover .caption {
+        background: transparent url("../i/cw-orange80.png") top left repeat; }
+    section.main .col .tn-me a, section.main .col .tn-me a:link, section.main .col .tn-me a:active, section.main .col-even .tn-me a, section.main .col-even .tn-me a:link, section.main .col-even .tn-me a:active {
+      background: transparent url("../i/tn-me1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-me a .caption, section.main .col .tn-me a:link .caption, section.main .col .tn-me a:active .caption, section.main .col-even .tn-me a .caption, section.main .col-even .tn-me a:link .caption, section.main .col-even .tn-me a:active .caption {
+        background: transparent url("../i/me-yellow80.png") top left repeat; }
+    section.main .col .tn-me a:hover, section.main .col-even .tn-me a:hover {
+      background: transparent url("../i/tn-me2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-me a:hover .caption, section.main .col-even .tn-me a:hover .caption {
+        background: transparent url("../i/me-yellow80.png") top left repeat; }
+    section.main .col .tn-mi a, section.main .col .tn-mi a:link, section.main .col .tn-mi a:active, section.main .col-even .tn-mi a, section.main .col-even .tn-mi a:link, section.main .col-even .tn-mi a:active {
+      background: transparent url("../i/tn-mi1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-mi a .caption, section.main .col .tn-mi a:link .caption, section.main .col .tn-mi a:active .caption, section.main .col-even .tn-mi a .caption, section.main .col-even .tn-mi a:link .caption, section.main .col-even .tn-mi a:active .caption {
+        background: transparent url("../i/mi-green80.png") top left repeat; }
+    section.main .col .tn-mi a:hover, section.main .col-even .tn-mi a:hover {
+      background: transparent url("../i/tn-mi2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-mi a:hover .caption, section.main .col-even .tn-mi a:hover .caption {
+        background: transparent url("../i/mi-green80.png") top left repeat; }
+    section.main .col .tn-in a, section.main .col .tn-in a:link, section.main .col .tn-in a:active, section.main .col-even .tn-in a, section.main .col-even .tn-in a:link, section.main .col-even .tn-in a:active {
+      background: transparent url("../i/tn-in1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-in a .caption, section.main .col .tn-in a:link .caption, section.main .col .tn-in a:active .caption, section.main .col-even .tn-in a .caption, section.main .col-even .tn-in a:link .caption, section.main .col-even .tn-in a:active .caption {
+        background: transparent url("../i/in-blue80.png") top left repeat; }
+    section.main .col .tn-in a:hover, section.main .col-even .tn-in a:hover {
+      background: transparent url("../i/tn-in2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-in a:hover .caption, section.main .col-even .tn-in a:hover .caption {
+        background: transparent url("../i/in-blue80.png") top left repeat; }
+    section.main .col .tn-as a, section.main .col .tn-as a:link, section.main .col .tn-as a:active, section.main .col-even .tn-as a, section.main .col-even .tn-as a:link, section.main .col-even .tn-as a:active {
+      background: transparent url("../i/tn-as1.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-as a .caption, section.main .col .tn-as a:link .caption, section.main .col .tn-as a:active .caption, section.main .col-even .tn-as a .caption, section.main .col-even .tn-as a:link .caption, section.main .col-even .tn-as a:active .caption {
+        background: transparent url("../i/as-purple80.png") top left repeat; }
+    section.main .col .tn-as a:hover, section.main .col-even .tn-as a:hover {
+      background: transparent url("../i/tn-as2.jpg") top left no-repeat;
+      background-size: 100%; }
+      section.main .col .tn-as a:hover .caption, section.main .col-even .tn-as a:hover .caption {
+        background: transparent url("../i/as-purple80.png") top left repeat; }
+  section.main .left {
+    margin-left: 0; }
+  section.main .col, section.main .col-even {
+    width: 32%; }
+
+.subpage .top {
+  width: 100%;
+  text-align: center; }
+  .subpage .top a, .subpage .top a:link, .subpage .top a:active {
+    display: block;
+    padding: 26px 20px 20px 20px;
+    text-decoration: none; }
+  .subpage .top h1, .subpage .top h2 {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.15em;
+    display: inline-block; }
+  .subpage .top h1 {
+    font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+    margin-bottom: 2px; }
+  .subpage .top h2 {
+    font-family: 'AvenirNextLTPro-Regular', Helvetica, Arial, sans-serif; }
+.subpage section.main header {
+  padding: 10% 0 60px 0; }
+.subpage h1 {
+  font-size: 4.0em; }
+.subpage h2 {
+  font-size: 3.0em; }
+.subpage .project {
+  width: 100%; }
+  .subpage .project img {
+    max-width: 100%;
+    width: 100%; }
+.subpage a, .subpage a:link, .subpage a:active, .subpage a:hover {
+  text-decoration: none; }
+.subpage .button {
+  margin-top: 60px; }
+  .subpage .button a, .subpage .button a:link, .subpage .button a:active {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; }
+  .subpage .button a:hover {
+    background-color: #1c2934;
+    text-decoration: none; }
+
+.project-full img {
+  max-width: 100%;
+  width: 100%; }
+
+.page {
+  width: 100%;
+  margin: 30px 0 60px 0;
+  max-width: 100%; }
+
+.description-container {
+  width: 100%;
+  padding: 80px 0 0 0; }
+  .description-container .description {
+    width: 80%;
+    margin: 0 10%; }
+    .description-container .description p {
+      margin-bottom: 20px;
+      color: #ffffff; }
+    .description-container .description .right {
+      float: right;
+      position: relative;
+      width: 50%;
+      margin: 1% 0 2% 4%; }
+      .description-container .description .right img {
+        max-width: 100%;
+        width: 100%;
+        position: relative; }
+    .description-container .description img.right-small {
+      float: right;
+      width: 20%;
+      margin: 1% 10% 2% 6%;
+      max-width: 100%; }
+    .description-container .description img.full {
+      width: 100%;
+      margin: 30px 0;
+      max-width: 100%; }
+    .description-container .description .carousel {
+      width: 90%;
+      margin: 60px 5%; }
+      .description-container .description .carousel div:nth-child(4n+0) {
+        margin-right: 0; }
+      .description-container .description .carousel .arrow {
+        float: left;
+        width: 6%;
+        text-align: center;
+        padding-top: 16%;
+        font-size: 2.4em; }
+        .description-container .description .carousel .arrow a {
+          display: block;
+          text-decoration: none; }
+      .description-container .description .carousel .screenshot {
+        width: 28%;
+        margin-right: 2%;
+        float: left; }
+        .description-container .description .carousel .screenshot img {
+          max-width: 100%; }
+    .description-container .description .no-carousel {
+      width: 100%;
+      margin: 60px 0; }
+      .description-container .description .no-carousel .screenshot {
+        width: 32%;
+        margin: 0 2% 20px 0;
+        float: left; }
+        .description-container .description .no-carousel .screenshot img {
+          max-width: 100%; }
+      .description-container .description .no-carousel div:nth-child(3n+0) {
+        margin-right: 0; }
+    .description-container .description .dots {
+      clear: both;
+      width: 100%;
+      padding-top: 15px;
+      text-align: center; }
+      .description-container .description .dots div {
+        display: inline-block;
+        margin-right: 4px; }
+        .description-container .description .dots div a {
+          font-size: 1.7em;
+          text-decoration: none; }
+        .description-container .description .dots div a.on, .description-container .description .dots div a:link.on, .description-container .description .dots div a:active.on, .description-container .description .dots div a:hover.on {
+          color: #ffffff; }
+    .description-container .description .after {
+      clear: both;
+      padding-top: 40px; }
+
+.about .top {
+  background: transparent url("../i/fc-blue90.png") top left repeat; }
+  .about .top a:hover {
+    background-color: #0e82af; }
+  .about .top h2 {
+    color: #a3e0ff; }
+.about h2 {
+  font-size: 4.4em;
+  margin-top: 80px;
+  color: #6bccef;
+  font-family: 'AvenirNextLTPro-UltLt', Helvetica, Arial, sans-serif; }
+.about .description-container {
+  background: transparent url("../i/fc-blue95.png") top left repeat; }
+  .about .description-container a, .about .description-container a:link, .about .description-container a:active {
+    color: #a3e0ff; }
+  .about .description-container a:hover {
+    color: #33b7f9; }
+  .about .description-container .more {
+    text-align: center; }
+    .about .description-container .more h2 {
+      text-align: center;
+      width: 80%;
+      font-size: 3.4em;
+      margin: 60px 10% 30px 10%; }
+    .about .description-container .more h3 {
+      text-align: center;
+      width: 80%;
+      margin: 40px 10% 0 10%; }
+    .about .description-container .more .social {
+      text-align: center;
+      font-size: 2.4em;
+      margin-top: -10px; }
+.about .right {
+  float: right;
+  margin-left: 4%; }
+.about .left {
+  float: left;
+  margin-right: 4%; }
+.about .left {
+  float: left; }
+.about .right, .about .left {
+  width: 45%;
+  margin: 1% 0 2% 0; }
+  .about .right img, .about .left img {
+    max-width: 100%; }
+  .about .right .small-caption, .about .left .small-caption {
+    position: relative;
+    font-size: 0.9em;
+    color: #6bccef;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    padding: 5px 0 0 0; }
+.about .page {
+  width: 100%;
+  clear: both;
+  margin: 40px 0 30px 0; }
+  .about .page img {
+    max-width: 100%; }
+  .about .page .small-caption {
+    position: relative;
+    font-size: 0.9em;
+    color: #6bccef;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 0 0;
+    max-width: 3000px; }
+.about .button {
+  margin-top: 60px; }
+  .about .button a, .about .button a:link, .about .button a:active {
+    background-color: #a3e0ff;
+    color: #051421; }
+  .about .button a:hover {
+    background-color: #33b7f9;
+    color: #051421; }
+.about footer a, .about footer a:link, .about footer a:active {
+  color: #6bccef; }
+.about footer a:hover {
+  color: #6bccef; }
+.about .copyright {
+  background: transparent url("../i/main-light-blue-bg.png") top left repeat; }
+
+.bb .top {
+  background: transparent url("../i/bb-green90.png") top left repeat; }
+  .bb .top a:hover {
+    background-color: #566c11; }
+  .bb .top h2 {
+    color: #cbf34d; }
+.bb h2 {
+  color: #cbf34d; }
+.bb .description-container {
+  background: transparent url("../i/bb-green95.png") top left repeat; }
+  .bb .description-container a, .bb .description-container a:link, .bb .description-container a:active {
+    color: #cbf34d; }
+  .bb .description-container a:hover {
+    color: #051421; }
+.bb .button {
+  margin-top: 60px; }
+  .bb .button a, .bb .button a:link, .bb .button a:active {
+    background-color: #cbf34d;
+    color: #051421; }
+  .bb .button a:hover {
+    color: #cbf34d; }
+.bb footer a, .bb footer a:link, .bb footer a:active {
+  color: #cbf34d; }
+.bb footer a:hover {
+  color: #566c11; }
+.bb .copyright {
+  background: transparent url("../i/bb-green90.png") top left repeat; }
+
+.kj .top {
+  background: transparent url("../i/kj-purple90.png") top left repeat; }
+  .kj .top a:hover {
+    background-color: #5e0970; }
+  .kj .top h2 {
+    color: #d88cd9; }
+.kj h2 {
+  color: #d88cd9; }
+.kj .description-container {
+  background: transparent url("../i/kj-purple95.png") top left repeat; }
+  .kj .description-container a, .kj .description-container a:link, .kj .description-container a:active {
+    color: #d88cd9; }
+  .kj .description-container a:hover {
+    color: #051421; }
+.kj .button {
+  margin-top: 60px; }
+  .kj .button a, .kj .button a:link, .kj .button a:active {
+    background-color: #d88cd9;
+    color: #051421; }
+  .kj .button a:hover {
+    color: #d88cd9; }
+.kj footer a, .kj footer a:link, .kj footer a:active {
+  color: #d88cd9; }
+.kj footer a:hover {
+  color: #5e0970; }
+.kj .copyright {
+  background: transparent url("../i/kj-purple90.png") top left repeat; }
+
+.me .top {
+  background: transparent url("../i/me-blue90.png") top left repeat; }
+  .me .top a:hover {
+    background-color: #024a88; }
+  .me .top h2 {
+    color: #8dd0ff; }
+.me h2 {
+  color: #f7b33f; }
+.me .description-container {
+  background: transparent url("../i/me-blue95.png") top left repeat; }
+  .me .description-container a, .me .description-container a:link, .me .description-container a:active {
+    color: #8dd0ff; }
+  .me .description-container a:hover {
+    color: #051421; }
+.me .button {
+  margin-top: 60px; }
+  .me .button a, .me .button a:link, .me .button a:active {
+    background-color: #8dd0ff;
+    color: #051421; }
+  .me .button a:hover {
+    color: #051421; }
+.me footer a, .me footer a:link, .me footer a:active {
+  color: #f7b33f; }
+.me footer a:hover {
+  color: #8dd0ff; }
+.me .copyright {
+  background: transparent url("../i/me-blue90.png") top left repeat; }
+
+.mi .top {
+  background: transparent url("../i/mi-green90.png") top left repeat; }
+  .mi .top a:hover {
+    background-color: #0d7a4b; }
+  .mi .top h2 {
+    color: #62eeb2; }
+.mi h2 {
+  color: #62eeb2; }
+.mi .description-container {
+  background: transparent url("../i/mi-green95.png") top left repeat; }
+  .mi .description-container a, .mi .description-container a:link, .mi .description-container a:active {
+    color: #62eeb2; }
+  .mi .description-container a:hover {
+    color: #051421; }
+.mi .button {
+  margin-top: 60px; }
+  .mi .button a, .mi .button a:link, .mi .button a:active {
+    background-color: #62eeb2;
+    color: #051421; }
+  .mi .button a:hover {
+    color: #62eeb2;
+    color: #051421; }
+.mi footer a, .mi footer a:link, .mi footer a:active {
+  color: #62eeb2; }
+.mi footer a:hover {
+  color: #0d7a4b; }
+.mi .copyright {
+  background: transparent url("../i/mi-green90.png") top left repeat; }
+
+.oc .top {
+  background: transparent url("../i/oc-blue80.png") top left repeat; }
+  .oc .top a:hover {
+    background-color: #3aaee5; }
+    .oc .top a:hover h2 {
+      color: #051421; }
+  .oc .top h2 {
+    color: #79d3fe; }
+.oc h2 {
+  color: #3aaee5; }
+.oc .description-container {
+  background: transparent url("../i/oc-blue90.png") top left repeat; }
+  .oc .description-container a, .oc .description-container a:link, .oc .description-container a:active {
+    color: #3aaee5; }
+  .oc .description-container a:hover {
+    color: #79d3fe; }
+.oc .button {
+  margin-top: 60px; }
+  .oc .button a, .oc .button a:link, .oc .button a:active {
+    background-color: #3aaee5;
+    color: #051421; }
+  .oc .button a:hover {
+    color: #051421;
+    background-color: #79d3fe; }
+.oc footer a, .oc footer a:link, .oc footer a:active {
+  color: #3aaee5; }
+.oc footer a:hover {
+  color: #79d3fe; }
+.oc .copyright {
+  background: transparent url("../i/me-blue90.png") top left repeat; }
+
+.in .top {
+  background: transparent url("../i/in-blue90.png") top left repeat; }
+  .in .top a:hover {
+    background-color: #436cb6; }
+  .in .top h2 {
+    color: #aaceff; }
+.in h2 {
+  color: #aaceff; }
+.in .project {
+  padding-bottom: 60px; }
+.in .description-container {
+  background: transparent url("../i/in-blue95.1.png") top left repeat; }
+  .in .description-container a, .in .description-container a:link, .in .description-container a:active {
+    color: #aaceff; }
+  .in .description-container a:hover {
+    color: #051421; }
+.in .button {
+  margin-top: 60px; }
+  .in .button a, .in .button a:link, .in .button a:active {
+    background-color: #436cb6;
+    color: #051421; }
+  .in .button a:hover {
+    background-color: #aaceff;
+    color: #051421; }
+.in footer a, .in footer a:link, .in footer a:active {
+  color: #aaceff; }
+.in footer a:hover {
+  color: #436cb6; }
+.in .copyright {
+  background: transparent url("../i/in-blue90.png") top left repeat; }
+
+.fc .top {
+  background: transparent url("../i/fc-blue90.png") top left repeat; }
+  .fc .top a:hover {
+    background-color: #0e82af; }
+  .fc .top h2 {
+    color: #a3e0ff; }
+.fc h2 {
+  color: #33b7f9; }
+.fc .project {
+  padding-bottom: 60px; }
+.fc .description-container {
+  background: transparent url("../i/fc-blue95.png") top left repeat; }
+  .fc .description-container a, .fc .description-container a:link, .fc .description-container a:active {
+    color: #0e82af; }
+  .fc .description-container a:hover {
+    color: #051421; }
+.fc .button {
+  margin-top: 60px; }
+  .fc .button a, .fc .button a:link, .fc .button a:active {
+    background-color: #a3e0ff;
+    color: #051421; }
+  .fc .button a:hover {
+    color: #a3e0ff; }
+.fc footer a, .fc footer a:link, .fc footer a:active {
+  color: #a3e0ff; }
+.fc footer a:hover {
+  color: #0e82af; }
+.fc .copyright {
+  background: transparent url("../i/fc-blue90.png") top left repeat; }
+
+.sf .top {
+  background: transparent url("../i/sf-green90.png") top left repeat; }
+  .sf .top a:hover {
+    background-color: #01efc4; }
+  .sf .top h2 {
+    color: #85ffe9; }
+.sf h2 {
+  color: #85ffe9; }
+.sf .description-container {
+  background: transparent url("../i/sf-green95.png") top left repeat; }
+  .sf .description-container a, .sf .description-container a:link, .sf .description-container a:active {
+    color: #85ffe9; }
+  .sf .description-container a:hover {
+    color: #051421; }
+.sf .button {
+  margin-top: 60px; }
+  .sf .button a, .sf .button a:link, .sf .button a:active {
+    background-color: #85ffe9;
+    color: #051421; }
+  .sf .button a:hover {
+    color: #85ffe9; }
+.sf footer a, .sf footer a:link, .sf footer a:active {
+  color: #85ffe9; }
+.sf footer a:hover {
+  color: #01efc4; }
+.sf .copyright {
+  background: transparent url("../i/sf-green90.png") top left repeat; }
+
+.as .top {
+  background: transparent url("../i/as-purple90.png") top left repeat; }
+  .as .top a:hover {
+    background-color: #a52279; }
+  .as .top h2 {
+    color: #fa4bbf; }
+.as h2 {
+  color: #fa4bbf; }
+.as .description-container {
+  background: transparent url("../i/as-purple95.png") top left repeat; }
+  .as .description-container a, .as .description-container a:link, .as .description-container a:active {
+    color: #fa4bbf; }
+  .as .description-container a:hover {
+    color: #051421; }
+.as .button {
+  margin-top: 60px; }
+  .as .button a, .as .button a:link, .as .button a:active {
+    background-color: #fa4bbf;
+    color: #051421; }
+  .as .button a:hover {
+    color: #fa4bbf; }
+.as footer a, .as footer a:link, .as footer a:active {
+  color: #fa4bbf; }
+.as footer a:hover {
+  color: #a52279; }
+.as .copyright {
+  background: transparent url("../i/as-purple90.png") top left repeat; }
+
+.iv .top {
+  background: transparent url("../i/iv-red90.png") top left repeat; }
+  .iv .top a:hover {
+    background-color: #ff363c; }
+  .iv .top h2 {
+    color: #760105; }
+.iv h2 {
+  color: #ff363c; }
+.iv .project {
+  padding-bottom: 60px; }
+.iv .description-container {
+  background: transparent url("../i/iv-red95.png") top left repeat; }
+  .iv .description-container a, .iv .description-container a:link, .iv .description-container a:active {
+    color: #ff363c; }
+  .iv .description-container a:hover {
+    color: #051421; }
+.iv .button {
+  margin-top: 60px; }
+  .iv .button a, .iv .button a:link, .iv .button a:active {
+    background-color: #ff363c;
+    color: #051421; }
+  .iv .button a:hover {
+    color: #ff363c; }
+.iv footer a, .iv footer a:link, .iv footer a:active {
+  color: #ff363c; }
+.iv footer a:hover {
+  color: #760105; }
+.iv .copyright {
+  background: transparent url("../i/iv-red90.png") top left repeat; }
+
+.cw .top {
+  background: transparent url("../i/cw-blue90.png") top left repeat; }
+  .cw .top a:hover {
+    background-color: #0c3b60; }
+  .cw .top h2 {
+    color: #04acf5; }
+.cw h2 {
+  color: #f05423; }
+.cw .description-container {
+  background: transparent url("../i/cw-blue95.png") top left repeat; }
+  .cw .description-container a, .cw .description-container a:link, .cw .description-container a:active {
+    color: #04acf5; }
+  .cw .description-container a:hover {
+    color: #f05423; }
+.cw .button {
+  margin-top: 60px; }
+  .cw .button a, .cw .button a:link, .cw .button a:active {
+    background-color: #04acf5;
+    color: #051421; }
+  .cw .button a:hover {
+    color: #0c3b60;
+    background-color: #f05423; }
+.cw footer a, .cw footer a:link, .cw footer a:active {
+  color: #f05423; }
+.cw footer a:hover {
+  color: #04acf5; }
+.cw .copyright {
+  background: transparent url("../i/cw-blue90.png") top left repeat; }
+
+footer {
+  clear: both;
+  width: 66%;
+  padding: 80px 17% 40px 17%;
+  background: transparent url("../i/main-light-blue-bg.png") top left repeat;
+  font-family: 'AvenirNextLTPro-Regular', Helvetica, Arial, sans-serif;
+  color: #051421;
+  text-align: center; }
+  footer a, footer a:link, footer a:active {
+    font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif;
+    color: #006b92;
+    text-decoration: none; }
+  footer a:hover {
+    color: #008fc2; }
+  footer .social {
+    font-size: 2.4em; }
+    footer .social a {
+      margin-right: 4px; }
+
+.subpage footer {
+  background: transparent url("../i/grey-bg.png") top left repeat;
+  color: #ffffff; }
+
+.copyright {
+  width: 60%;
+  padding: 26px 20% 8px 20%;
+  background: transparent url("../i/main-darker-blue-bg.png") top left repeat;
+  font-family: 'AvenirNextLTPro-Medium', Helvetica, Arial, sans-serif; }
+  .copyright p {
+    font-size: 0.9em;
+    line-height: 1.0em;
+    margin-bottom: none;
+    color: #ffffff;
+    text-align: center; }
+
+@media only screen and (min-width: 1025px) {
+  section.main .col-even {
+    display: none; } }
+@media only screen and (min-width: 1300px) and (max-width: 2000px) {
+  section.main .project {
+    width: 80%;
+    margin: 0 10%; }
+
+  .description-container .description {
+    width: 62%;
+    margin: 0 18%; }
+    .description-container .description img.right img {
+      width: 100%;
+      background-color: red; } }
+@media only screen and (min-width: 2001px) {
+  section.main .project {
+    width: 50%;
+    margin: 0 25%; }
+
+  .description-container .description {
+    width: 40%;
+    margin: 0 30%; }
+    .description-container .description img.right img {
+      width: 100%;
+      background-color: red; }
+
+  footer {
+    width: 46%;
+    padding: 80px 27% 40px 27%; } }
+@media only screen and (max-width: 480px) {
+  .subpage .description img.right-small {
+    width: 60%;
+    clear: both;
+    margin: 0 20% 30px 20%;
+    max-width: 100%; } }
+@media only screen and (min-width: 481px) and (max-width: 740px) {
+  .subpage .description img.right-small {
+    float: right;
+    width: 40%;
+    margin: 1% 10% 6% 6%;
+    max-width: 100%; } }
+@media only screen and (max-width: 620px) {
+  body:before {
+    -webkit-background-size: 205%;
+    -moz-background-size: 205%;
+    -o-background-size: 205%;
+    background-size: 205%; }
+
+  h1 {
+    font-size: 3.0em;
+    padding: 0;
+    margin-top: 25%; }
+
+  h2 {
+    font-size: 2.4em;
+    padding: 0; }
+
+  p {
+    font-size: 1.1em; }
+
+  .subpage .top a, .subpage .top a:link, .subpage .top a:active {
+    display: block;
+    padding: 20px 10px 16px 10px;
+    text-decoration: none; }
+  .subpage .top h1, .subpage .top h2 {
+    font-size: 1.0em;
+    letter-spacing: 0.15em; }
+  .subpage h1 {
+    font-size: 2.4em;
+    padding: 0;
+    margin-bottom: 10px; }
+  .subpage h2 {
+    font-size: 2.0em;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: 1.2em; }
+  .subpage .description-container {
+    padding: 40px 0 0 0; }
+    .subpage .description-container .description {
+      width: 90%;
+      margin: 0 5%; }
+      .subpage .description-container .description p {
+        width: 100%;
+        margin-bottom: 20px; }
+      .subpage .description-container .description img.right, .subpage .description-container .description .right, .subpage .description-container .description .left {
+        width: 90%;
+        margin: 0 5% 30px 5%;
+        max-width: 100%; }
+        .subpage .description-container .description img.right .small-caption, .subpage .description-container .description .right .small-caption, .subpage .description-container .description .left .small-caption {
+          text-align: center;
+          line-height: 1.2em;
+          margin: 0 20px; }
+      .subpage .description-container .description img.full, .subpage .description-container .description img.page {
+        width: 100%;
+        margin: 20px 0;
+        max-width: 100%; }
+      .subpage .description-container .description .carousel {
+        width: 100%;
+        margin: 0; }
+        .subpage .description-container .description .carousel div {
+          float: left;
+          width: 40%;
+          margin: 30px 3% 0 0; }
+        .subpage .description-container .description .carousel div:nth-child(3n+0) {
+          margin-right: 0; }
+        .subpage .description-container .description .carousel div:nth-child(4n+0) {
+          display: none; }
+        .subpage .description-container .description .carousel .arrow {
+          float: left;
+          width: 8%;
+          padding-top: 30%;
+          font-size: 1.6em;
+          margin: 0; }
+          .subpage .description-container .description .carousel .arrow a {
+            display: block;
+            text-decoration: none; }
+          .subpage .description-container .description .carousel .arrow .left {
+            text-align: left; }
+          .subpage .description-container .description .carousel .arrow .right {
+            text-align: right; }
+      .subpage .description-container .description .no-carousel {
+        width: 100%;
+        padding-top: 0;
+        margin: 0 0; }
+        .subpage .description-container .description .no-carousel div {
+          float: none;
+          clear: both;
+          width: 100%;
+          margin: 30px 0 0 0; }
+
+  .about h2 {
+    font-size: 3.0em; }
+
+  section.main, .subpage section.main {
+    width: 90%;
+    padding: 0 5%; }
+    section.main header, .subpage section.main header {
+      text-align: center;
+      padding: 10% 0 10px 0; }
+
+  section.main .col, section.main .col-even {
+    margin: 30px 0 0 0%;
+    width: 100%; }
+    section.main .col .caption, section.main .col-even .caption {
+      padding: 20px 10px 21px 10px; }
+
+  footer {
+    width: 90%;
+    padding: 50px 5% 30px 5%; }
+
+  .copyright {
+    width: 90%;
+    padding: 26px 5% 8px 5%; } }
+@media only screen and (min-width: 621px) and (max-width: 800px) {
+  body {
+    background-size: 140%; }
+
+  h1, .subpage h1 {
+    font-size: 3.6em; }
+
+  h2, .subpage h2 {
+    font-size: 3.0em;
+    padding-bottom: 15px; }
+
+  .about h2 {
+    font-size: 3.4em; }
+
+  .subpage .description .carousel {
+    width: 90%;
+    margin-top: 0; }
+    .subpage .description .carousel div {
+      float: left;
+      width: 42%;
+      margin: 30px 3% 0 0; }
+    .subpage .description .carousel div:nth-child(3n+0) {
+      margin-right: 0; }
+    .subpage .description .carousel div:nth-child(4n+0) {
+      display: none; }
+    .subpage .description .carousel .arrow {
+      float: left;
+      width: 6%;
+      text-align: center;
+      padding-top: 27%;
+      font-size: 2.0em;
+      margin: 0; }
+      .subpage .description .carousel .arrow a {
+        display: block;
+        text-decoration: none; }
+  .subpage .description .no-carousel {
+    width: 90%;
+    padding-top: 0;
+    margin-top: 0; }
+    .subpage .description .no-carousel div {
+      float: left;
+      width: 41%;
+      margin: 4% 4% 0 0; }
+    .subpage .description .no-carousel div:nth-child(even) {
+      margin-right: 0; } }
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  h2 {
+    padding-bottom: 40px; } }
+@media only screen and (min-width: 581px) and (max-width: 1024px) {
+  h3 {
+    font-size: 0.9em; }
+
+  section.main {
+    width: 90%;
+    padding: 0 5%; }
+    section.main header {
+      text-align: center;
+      padding: 25% 0 10px 0; }
+    section.main .col, section.main .col-even {
+      display: block;
+      float: left;
+      margin: 2% 0 2% 3%;
+      width: 48%; }
+      section.main .col .caption, section.main .col-even .caption {
+        padding: 20px 10px 21px 10px; }
+    section.main .col:nth-child(odd) {
+      margin-left: 0; }
+
+  .subpage section.main header {
+    padding-bottom: 40px; }
+
+  footer {
+    width: 80%;
+    padding: 50px 10% 30px 10%; }
+
+  .copyright {
+    width: 80%;
+    padding: 26px 10% 8px 10%; } }
+@media only screen and (max-width: 1024px) {
+  section.main .button a:hover {
+    background-color: #81d4f1; }
+
+  .about .description .more h2 {
+    font-size: 3.0em;
+    margin: 40px 10% 10px 10%;
+    line-height: 1.1em; }
+  .about .description .more h3 {
+    text-align: center;
+    width: 80%;
+    margin: 30px 10% 0 10%; }
+  .about .description .more .social {
+    text-align: center;
+    font-size: 2.4em;
+    margin-top: 0; }
+
+  footer a, footer a:link, footer a:active, footer a:hover {
+    color: #006b92; } }
+
+
+    .telephone-hours {
+      color: bisque;
+    }
+@font-face {
+  font-family: andolas;
+  src: url(/Public/webfonts/Andolas.otf)
+  format('otf');
+}
+@font-face {
+  font-family: underground;
+  src: url(/Public/webfonts/Underground.ttf)
+  format('truetype');
+}
+.info-font-style {
+  font-family: andolas;
+}
+.page-title {
+  font-family: underground;
+}
+.navbar {
+  position: fixed;
+  width: 100% vw;
+  
+}
+.nav-item {
+  color: #1828ff;
+}
+.title-nav {
+  font-size: 28px;
+  color: #1828ff;
+}
+.navbar {
+  background-color: rgba(255, 250, 240, 0.589);
+  font-size: 20px;
+  
+}
+.link-instructions {
+  color: azure;
+}
+.contact-img {
+  align-content: center;
+  width: 80%;
+}
+.list {
+  width: 100%;
+}

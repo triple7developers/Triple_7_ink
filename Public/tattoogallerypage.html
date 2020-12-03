@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Triple7ink Tattoo shop serves Mesa, Tempe, San Tan Valley, Apache Junction, Gilbert. We're always open and take walk ins because we're a mobile shop, so we come to you.">
+        <link rel="canonical" href="https://triple7ink.com/TattooGallerypage.html">
+   
+
+    <link rel="preload" href="/css/photogallery.css" as="style">
+    <link rel="preload" href="/js/photogallery.js" as="script">
+
+     <link rel="preload" href="https://kit.fontawesome.com/90e8388a55.js" crossorigin="anonymous" as="script">
+    <link rel="preload" href="specialelite-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="rye-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="nosifer-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="metalmania-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="emblemaone-regular-webfont.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    <title>Triple Seven Ink - Photo Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+
+    <!-- jquery plug in -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <!-- custom css -->
+    <!-- <link href="css/custom.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/css/photogallery.css">
+
+    <!-- calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };
+
+</script>
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    .gallery {
+        border: 1px solid #cccccc;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .des {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 25%;
+    }
+
+    @media only screen and (max-width: 700px) {
+        .responsive {
+            width: 50%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .responsive {
+            width: 100%;
+
+        }
+    }
+</style>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJ5GXL5"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo" class="display-2 mb-2 metalfont"><span class="fa fa-skull-crossbones title"></span>Triple
+                    7 Ink Tattoo's</td>
+                <td id="navigation">
+                    <a class="tatfont" style="color: black;" href="/index.html">Triple7ink Home</a>
+                    <a class="tatfont" href="#bio">Find Us</a>
+                    <a class="tatfont" href="#contact">Contact</a>
+                    <a class="tatfont" href="/policy.html">My Tattoo Policy</a>
+                    <a class="tatfont" href="/styles.html">Styles</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <h1><span class="txt-rotate titlesize" data-period="2000" data-rotate='["Call or Click"]'></span></h1>
+                <p class="typewriterfont">When you pay to get a tattoo from Triple 7 Ink, my number one goal is
+                    to give you exactly the tattoo you asked for, exceeds your expectations and
+                    is something you'll be happy with for the rest of your life.</p>
+                <a href="tel:+">(480) 331-8607</a>
+                <button class="btn_one scaryfont">
+                    <!-- Calendly link widget begin -->
+                    <a href=""
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/triple7/design-session?primary_color=81d4f1'});return false;">Hire
+                        me</a>
+                </button>
+                <!-- Calendly link widget end --><br>
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                                href="https://www.facebook.com/triple7ink"><i class="fab fa-facebook"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                                href="https://www.facebook.com/triple7.chris/"><i
+                                    class="fab fa-facebook-square"></i></a></td>
+                        <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                                href="https://www.instagram.com/triple7ink"><i class="fab fa-instagram"></i></a></td>
+                    </tr>
+                </table>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;"></td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1 class="bigstyle title">Photos</h1>
+        <div id="photos">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/Rachel skull.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/flowertats.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/weirdtree.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/tigerarm.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/back girl.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/back script.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/back_lettering.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/dog.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/feather 2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/feather.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/flower2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/flowerchic2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/flowertats.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/footprints2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/infiniti.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/iris.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/let it be.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/Lillies.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/M_Tattoo.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/mask1.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/nest.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/nurse.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/nurse2.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/nurse3.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/pinpic.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/roses.jpg">
+            <img onclick="magnify($(this).attr('src'))" src="/assets/i/sunflower.jpg">
+
+        </div>
+    </div>
+
+    <!-- Pagination -->
+
+    <table class="socialtable">
+        <tr class="">
+            <td class=""><a class="page btn_one" href="tattoogallery.html">Back</a></td>
+            <td><a class="page btn_one" href="/tattoogallery.html">1</a></td>
+            <td><a class="page btn_one" href="/tattoogallerypage.html">2</a></td>
+            <td><a class="page btn_one" href="/tattoogallerypage.html">Next</a></td>
+        </tr>
+    </table>
+
+
+    <div id="bio">
+        <section class="content socialtable content-3">
+            <div class="container">
+                <h2 class="section-header bigstyle title"><span
+                        class="glyphicon glyphicon-pushpin text-primary"></span><br>Work is guaranteed</h2>
+                <p class="lead text-muted typewriterfont">We take pride in our work and if for any reason we should have
+                    to come back and touch it up, we'll do it for free.</p>
+                <a href="https://g.page/777ink?gm" class="btn_one btn-primary btn-lg scaryfont">Find us on Maps</a>
+            </div>
+    </div>
+    </section>
+    </div>
+    <div id="contact">
+        <h1>contact</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-phone"></i><a href="tel:+"> &nbsp; +1 480 331 8607</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; chris@triple7ink.com</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a class="social" href="https://www.facebook.com/triple7ink"><i
+                                            class="fab fa-facebook"></i></a>
+                                    <a class="social" href="https://www.facebook.com/triple7.chris/"><i
+                                            class="fab fa-facebook-square"></i></a>
+                                    <a class="social" href="https://www.instagram.com/triple7ink"><i
+                                            class="fab fa-instagram"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer id="footer">
+        <p>Copyright &copy; Triple7ink.com 2020</p>
+    </footer>
+    <script src="/js/photogallery.js" type="text/javascript"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+
+    <!-- jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Font Awsome -->
+    <!-- <script src="https://kit.fontawesome.com/90e8388a55.js" crossorigin="anonymous"></script> -->
+
+     
+
+
+</body>
+
+</html>
