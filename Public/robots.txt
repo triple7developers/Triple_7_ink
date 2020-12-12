@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /index.html
+Allow: /policy.html
+Allow: /styles.html
+Allow: /tattoogallery.html
+Allow: /domains$
+Allow: /anchors$
+Allow: /pages$
+Allow: /links$
+Allow: /dotbots$
+Allow: /$
+
+ 
+Disallow: /manifest.webmanifest/
+Disallow: /tattoogallerypage.html
+
+Sitemap: http://www.triple7ink.com/sitemap.xml
